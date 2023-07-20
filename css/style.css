@@ -309,6 +309,12 @@ template {
 }
 
 :root {
+  --GUNMETAL: #263640;
+  --SHADOW-BLUE: #7591A3;
+  --SPANISH-GRAY: #929A9F;
+  --VIVID-GAMBOGE: #FF9900;
+  --BRIGHT-GRAY: #E6F0F4;
+  --LIGHT-PERIWINKLE: #BEC9D8;
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
 }
@@ -378,4 +384,16 @@ body {
   grid-template-columns: repeat(12, 1fr);
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
