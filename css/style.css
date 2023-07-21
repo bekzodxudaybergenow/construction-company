@@ -311,10 +311,12 @@ template {
 :root {
   --GUNMETAL: #263640;
   --SHADOW-BLUE: #7591A3;
+  --SHADOW-BLUE-H: #5a8199;
   --SPANISH-GRAY: #929A9F;
   --VIVID-GAMBOGE: #FF9900;
   --BRIGHT-GRAY: #E6F0F4;
   --LIGHT-PERIWINKLE: #BEC9D8;
+  --WHITE: #fff;
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
 }
@@ -355,6 +357,43 @@ template {
   font-weight: 800;
   font-style: normal;
 }
+.header {
+  background-color: var(--GUNMETAL);
+  padding: 15px 0;
+  color: var(--WHITE);
+}
+
+.header-row {
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  grid-column: 5/4 span;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 20px;
+  transition: color ease-in-out 0.2s;
+}
+.nav-link:hover {
+  color: var(--SHADOW-BLUE);
+}
+
+.header-btn {
+  grid-column: 11/2 span;
+  transition: background-color ease-in-out 0.2s;
+}
+.header-btn:hover {
+  background-color: var(--SHADOW-BLUE-H);
+}
+
 *,
 *::before,
 *::after {
@@ -392,8 +431,16 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style: none;
+}
+
+.btn {
+  padding: 8px 29px;
+  background-color: var(--SHADOW-BLUE);
+  border-radius: 5px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
