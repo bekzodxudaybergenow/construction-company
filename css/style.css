@@ -521,6 +521,53 @@ template {
   color: var(--GUNMETAL);
 }
 
+.info {
+  padding: 147px 0;
+}
+
+.info-row {
+  color: var(--GUNMETAL);
+}
+
+.info-content {
+  grid-column: 5 span;
+}
+
+.info-content-title {
+  margin-bottom: 8px;
+}
+
+.info-content-desc {
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.info-col {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  grid-column: 7/6 span;
+  row-gap: 37px;
+}
+
+.info-col-box {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  height: 69px;
+}
+
+.info-box-quantity {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.info-box-desc {
+  line-height: 26px;
+}
+
 *,
 *::before,
 *::after {
@@ -575,4 +622,12 @@ ul {
   text-align: center;
   line-height: 16px;
   color: var(--WHITE);
+}
+
+.title {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--GUNMETAL);
 }/*# sourceMappingURL=style.css.map */
