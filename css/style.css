@@ -319,6 +319,7 @@ template {
   --LIGHT-PERIWINKLE: #BEC9D8;
   --WHITE: #fff;
   --PLATINUM: #E4E3E8;
+  --LOTION: #FDFDFD;
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
 }
@@ -579,6 +580,7 @@ template {
 body {
   font-family: var(--poppins);
   font-size: 16px;
+  background-color: var(--LOTION);
 }
 
 .container {
