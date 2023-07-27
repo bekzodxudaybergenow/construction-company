@@ -315,6 +315,7 @@ template {
   --SHADOW-BLUE-H: #5a8199;
   --SPANISH-GRAY: #929A9F;
   --VIVID-GAMBOGE: #FF9900;
+  --VIVID-GAMBOGE-H: #d17f03;
   --BRIGHT-GRAY: #E6F0F4;
   --LIGHT-PERIWINKLE: #BEC9D8;
   --WHITE: #fff;
@@ -604,6 +605,60 @@ template {
   height: 110px;
   background-color: var(--WHITE);
   box-shadow: -40px 40px 70px 0px rgba(25, 25, 25, 0.04);
+}
+
+.branch-row {
+  justify-content: space-between;
+}
+
+.branch-col {
+  max-width: 312px;
+}
+
+.branch-col-img {
+  width: 312px;
+  height: 333px;
+  background-color: var(--BRIGHT-GRAY);
+  margin-bottom: 18px;
+}
+.branch-col-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.branch-col-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37px;
+  color: var(--GUNMETAL);
+  margin-bottom: 18px;
+}
+
+.branch-col-desc {
+  line-height: 28px;
+  color: var(--SPANISH-GRAY);
+  margin-bottom: 24px;
+}
+
+.branch-col-link {
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--VIVID-GAMBOGE);
+  transition: color 0.2s ease-in-out;
+}
+.branch-col-link svg {
+  margin-left: 16px;
+}
+.branch-col-link svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.branch-col-link:hover {
+  color: var(--VIVID-GAMBOGE-H);
+}
+.branch-col-link:hover path {
+  fill: var(--VIVID-GAMBOGE-H);
 }
 
 *,
