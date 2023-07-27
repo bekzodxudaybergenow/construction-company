@@ -569,6 +569,43 @@ template {
   line-height: 26px;
 }
 
+.clients {
+  padding-bottom: 150px;
+}
+
+.clients-row {
+  grid-template-rows: auto 110px;
+}
+
+.clients-title {
+  font-family: var(--inter);
+  font-weight: 700;
+  line-height: 26px;
+  grid-column: span 12;
+  justify-self: center;
+  color: var(--GUNMETAL);
+  margin-bottom: 47px;
+}
+
+.clients-list {
+  grid-column: 12 span;
+  grid-row: 2;
+  justify-content: center;
+  -moz-column-gap: 78px;
+       column-gap: 78px;
+  width: 100%;
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 234px;
+  height: 110px;
+  background-color: var(--WHITE);
+  box-shadow: -40px 40px 70px 0px rgba(25, 25, 25, 0.04);
+}
+
 *,
 *::before,
 *::after {
