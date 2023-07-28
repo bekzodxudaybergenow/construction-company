@@ -1,0 +1,22 @@
+.help {
+    padding: 163px 0 150px;
+}
+.help-content {
+    grid-column: 12 span;
+    margin-bottom: 51px;
+    justify-self: center;
+    text-align: center;
+}
+.help-content-title {
+    margin-bottom: 22px;
+}
+.help-content-desc {
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--GUNMETAL);
+}
+.help-img {
+    grid-column: 12 span;
+    height: 400px;
+    background-color: var(--BRIGHT-GRAY);
+}
