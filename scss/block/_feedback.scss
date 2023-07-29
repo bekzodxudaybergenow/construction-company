@@ -13,7 +13,7 @@
     max-width: 854px;
     background-color: var(--WHITE);
     padding: 40px 32px 32px 92px;
-    margin-bottom: 50px;
+    margin-bottom: 62px;
     border-radius: 10px;
     position: relative;
 
@@ -22,7 +22,7 @@
         width: 24px;
         height: 24px;
         position: absolute;
-        left: 48px;
+        left: 60px;
         bottom: -12px;
         background-color: inherit;
         clip-path: polygon(0 0, 0 100%, 100% 100%);
@@ -51,16 +51,26 @@
     }
 }
 .feedback-list {
+    max-width: 765px;
+    width: 100%;
+    justify-content: space-between;
 }
 .feedback-list-item {
     display: flex;
     align-items: center;
+    column-gap: 16px;
 }
-.feedback-item-link {
+.feedback-link-img {
+    display: block;   
 }
 .feedback-link-name {
-}
-.feedback-link-inner {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--GUNMETAL);
 }
 .feedback-link-profession {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--GUNMETAL);
 }
