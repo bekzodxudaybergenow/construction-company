@@ -708,6 +708,20 @@ template {
   padding: 40px 32px 32px 92px;
   margin-bottom: 50px;
   border-radius: 10px;
+  position: relative;
+}
+.feedback-box::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 48px;
+  bottom: -12px;
+  background-color: inherit;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+  transform: rotate(-45deg);
+  border-radius: 0 0 0 3px;
 }
 
 .feedback-box-desc {
@@ -729,6 +743,7 @@ template {
   width: 25px;
   height: 20px;
 }
+
 .feedback-list-item {
   display: flex;
   align-items: center;
