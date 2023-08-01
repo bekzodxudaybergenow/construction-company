@@ -36,7 +36,23 @@
     outline: none;
     padding: 14px 16px;
     border: none;
+    color: var(--GUNMETAL);
+    
+    &::placeholder {
+        color: var(--GUNMETAL);
+    }
 }
 .register-form-btn {
     flex-grow: 1;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: var(--GUNMETAL);
+    color: var(--WHITE);
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    
+    &:hover {
+        background-color: var(--GUNMETAL-H);
+    }
 }

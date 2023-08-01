@@ -819,10 +819,27 @@ template {
   outline: none;
   padding: 14px 16px;
   border: none;
+  color: var(--GUNMETAL);
+}
+.register-form-input::-moz-placeholder {
+  color: var(--GUNMETAL);
+}
+.register-form-input::placeholder {
+  color: var(--GUNMETAL);
 }
 
 .register-form-btn {
   flex-grow: 1;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: var(--GUNMETAL);
+  color: var(--WHITE);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.register-form-btn:hover {
+  background-color: var(--GUNMETAL-H);
 }
 
 *,
