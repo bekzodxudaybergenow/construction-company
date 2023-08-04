@@ -27,27 +27,40 @@
 .footer-logo {
     width: 105px;
     height: 30px;
+    margin-bottom: 28px;
 
     & a img {
         display: block;
     }
 }
-.footer-inner {
+.footer-lists {
+    margin-bottom: 26px;
 }
 .footer-list {
-    row-gap: 24px;
-}
-.footer-list-item {
+    column-gap: 24px;
+
+    &:nth-child(1) {
+        margin-bottom: 14px;
+    }
 }
 .footer-item-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--WHITE);
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: var(--SHADOW-BLUE);
+    }
 }
 .footer-app {
     grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     flex-direction: column;
     align-items: flex-start;
 }
-.footer-app img:nth-child(2){
+.footer-app a:nth-child(2){
     margin-bottom: 16px;
 }
 .footer-app-title {
@@ -59,4 +72,8 @@
     margin-bottom: 20px;
 }
 .footer-copy {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--GAINSBORO);
 }
