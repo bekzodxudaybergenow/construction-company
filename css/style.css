@@ -322,6 +322,7 @@ template {
   --PLATINUM: #E4E3E8;
   --LOTION: #FDFDFD;
   --COLUMBIA-BLUE: #CBD4E3;
+  --GAINSBORO: #D9DBE1;
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
 }
@@ -840,6 +841,65 @@ template {
 }
 .register-form-btn:hover {
   background-color: var(--GUNMETAL-H);
+}
+
+.footer {
+  padding: 60px 0 56px;
+  background-color: var(--GUNMETAL);
+  position: relative;
+  z-index: -1;
+}
+.footer::after {
+  content: "";
+  width: 510px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/images/footer/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: auto 140px;
+  grid-template-rows: auto auto auto;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 105px;
+  height: 30px;
+}
+.footer-logo a img {
+  display: block;
+}
+
+.footer-list {
+  row-gap: 24px;
+}
+
+.footer-app {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-app img:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.footer-app-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--GAINSBORO);
+  padding-left: 4px;
+  margin-bottom: 20px;
 }
 
 *,
