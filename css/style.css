@@ -577,15 +577,17 @@ template {
 }
 
 .clients-row {
-  grid-template-rows: auto 110px;
+  flex-wrap: wrap;
 }
 
 .clients-title {
+  display: block;
+  width: 100%;
   font-family: var(--inter);
   font-weight: 700;
   line-height: 26px;
   grid-column: span 12;
-  justify-self: center;
+  text-align: center;
   color: var(--GUNMETAL);
   margin-bottom: 47px;
 }
